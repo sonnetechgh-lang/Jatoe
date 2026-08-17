@@ -2,7 +2,19 @@ node_modules/
 .next/
 out/
 coverage/
+.vercel/
+
+# Environment files
 .env*
 !.env.example
+
+# Logs and local build metadata
 npm-debug.log*
+*.log
 *.tsbuildinfo
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
