@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://www.jatoesystems.com"),
   title: { default: "Jatoe Systems | Engineering Ideas Into Real-World Solutions", template: "%s | Jatoe Systems" },
   description: siteConfig.description,
+  icons: {
+    icon: [{ url: "/images/Logo.PNG", type: "image/png" }],
+    shortcut: "/images/Logo.PNG",
+    apple: "/images/Logo.PNG",
+  },
   openGraph: { title: siteConfig.name, description: siteConfig.description, type: "website", locale: "en_GH", siteName: siteConfig.name },
 };
 
