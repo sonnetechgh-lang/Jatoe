@@ -227,6 +227,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .team-placeholder-card__visual span { position: absolute; z-index: 1; right: 1.25rem; bottom: 1rem; font-family: var(--font-heading); font-size: clamp(2.8rem, 5vw, 4.5rem); font-weight: 300; line-height: 1; }
 .team-placeholder-card__visual i { position: absolute; top: 50%; left: 50%; width: 1px; height: 120%; background: rgba(101,201,243,.2); transform: translate(-50%, -50%); }
 .team-placeholder-card__visual i:last-child { transform: translate(-50%, -50%) rotate(90deg); }
+.team-profile-card__visual::before, .team-profile-card__visual::after { display: none; }
+.team-profile-card__visual img { object-fit: cover; object-position: 50% 24%; }
 .team-placeholder-card__content { padding: 1.35rem; }
 .team-placeholder-card__content > p { margin-bottom: .65rem; color: var(--blue-700); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .team-placeholder-card__content h3 { font-size: 1.3rem; }
