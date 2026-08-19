@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Logo } from "@/components/layout/logo";
 import { ContactCta } from "@/components/sections/contact-cta";
 import { PageHero } from "@/components/sections/page-hero";
+import { TeamConstellationGraphic } from "@/components/sections/team-constellation-graphic";
 import { SectionHeading } from "@/components/ui/section-heading";
 
-const teamPlaceholders = Array.from({ length: 11 }, (_, index) => String(index + 2).padStart(2, "0"));
+const teamPlaceholders = Array.from({ length: 12 }, (_, index) => String(index + 1).padStart(2, "0"));
 
 export const metadata: Metadata = {
   title: "Team",
@@ -18,9 +19,7 @@ export default function TeamPage() {
         eyebrow="Our team"
         title="Different skills, shared purpose."
         description="Jatoe Systems is being built by people who enjoy solving problems, sharing what they know and making things that matter."
-        image="/images/Team/team.jpg"
-        imageAlt="Four members of the Jatoe Systems team standing together"
-        imageQuality={100}
+        graphic={<TeamConstellationGraphic />}
       />
       <section className="team-profiles section">
         <div className="container">
