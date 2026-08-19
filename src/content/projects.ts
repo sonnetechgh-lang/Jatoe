@@ -18,9 +18,8 @@ export const projects: Project[] = [
     description: "We are researching connected devices that can gather information from the world around them, share it and respond in helpful ways.",
     category: "Embedded systems & IoT",
     status: "In development",
-    image: "/images/projects/connected-device-research.svg",
-    imageAlt: "Diagram showing sensors connected to an edge controller, secure network and monitoring dashboard",
-    imageFit: "contain",
+    image: "/images/projects/connected-device-research.jpg",
+    imageAlt: "Black woman scientist working with connected electronic equipment in a laboratory",
   },
   {
     slug: "fabrication-prototypes",
