@@ -7,6 +7,7 @@ interface PageHeroProps {
   description: string;
   image?: string;
   imageAlt?: string;
+  imageQuality?: number;
   graphic?: ReactNode;
 }
 
@@ -16,6 +17,7 @@ export function PageHero({
   description,
   image,
   imageAlt = "",
+  imageQuality,
   graphic,
 }: PageHeroProps) {
   const hasBackgroundImage = Boolean(image);
@@ -27,7 +29,14 @@ export function PageHero({
       {hasBackgroundImage && image ? (
         <>
           <div className="page-hero__background">
-            <Image fill priority sizes="100vw" src={image} alt={imageAlt} />
+            <Image
+              fill
+              priority
+              sizes="100vw"
+              src={image}
+              alt={imageAlt}
+              quality={imageQuality}
+            />
           </div>
           <div className="page-hero__background-shade" aria-hidden="true" />
         </>
