@@ -108,7 +108,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .page-hero__background, .page-hero__background-shade { position: absolute; inset: 0; }
 .page-hero__background img { object-fit: cover; object-position: center; }
 .page-hero__background-shade { background: linear-gradient(90deg, rgba(6,31,61,.98) 0%, rgba(6,31,61,.82) 43%, rgba(6,31,61,.2) 78%), linear-gradient(0deg, rgba(6,31,61,.64), transparent 52%); }
-.page-hero__grid--background { z-index: 1; width: 100%; display: flex; align-items: center; padding-block: clamp(4rem, 8vh, 6rem); }
+.page-hero__grid--background { z-index: 1; display: flex; align-items: center; padding-block: clamp(4rem, 8vh, 6rem); }
 .page-hero__grid--background .page-hero__copy { width: 100%; max-width: none; }
 .page-hero__grid--background .page-hero__copy h1 { max-width: 12ch; font-size: clamp(3rem, 7vw, 6.8rem); }
 .page-hero__grid--background .page-hero__copy > p:last-child { max-width: 42rem; font-size: clamp(1.05rem, 1.6vw, 1.25rem); }
